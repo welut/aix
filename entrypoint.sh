@@ -10,15 +10,15 @@ apt-get update && apt-get install -y \
 git clone $1
 git submodule update --init
 
-cp -r src/** appinventor-sources/appinventor/components/src
+cp -r src/** appinventor-extensions/appinventor/components/src
 
-cd appinventor-sources/appinventor/
+cd appinventor-extensions/appinventor/
 ant clean
 ant extensions
 
 cd ../..
 
-cd appinventor-sources/appinventor/components/build/extensions
+cd appinventor-extensions/appinventor/components/build/extensions
 file=$(dir)
 echo ::set-output name=file::$file
 

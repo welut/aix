@@ -15,7 +15,8 @@ cp -r src/** appinventor-extensions/appinventor/components/src
 cd appinventor-extensions/appinventor/
 ant clean
 ant MakeAuthKey
-ant extensions -Dproguard=1
+//ant extensions -Dproguard=1
+ant extensions
 
 cd ../..
 
